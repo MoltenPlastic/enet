@@ -30,7 +30,11 @@ func (err enet_error) f(a ...interface{}) error {
 	return fmt.Errorf(string(err), a...)
 }
 
-var enable_debug bool = true
+var enable_debug bool = false
+
+func Debug(state bool) {
+	enable_bool = state
+}
 
 func debugf(format string, a ...interface{}) {
 	if enable_debug {
