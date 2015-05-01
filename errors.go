@@ -33,7 +33,7 @@ func (err enet_error) f(a ...interface{}) error {
 var enable_debug bool = false
 
 func Debug(state bool) {
-	enable_bool = state
+	enable_debug = state
 }
 
 func debugf(format string, a ...interface{}) {
